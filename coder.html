@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reem - coder/decoder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+       #app{
+        width:100%;
+        max-width: 100%;
+       }
+       #app p{
+        width: 100%;
+        padding: 14px;
+        background: rgb(55, 211, 228);
+        color: aliceblue;
+        text-align:center ;
+        font-family: sans-serif;
+       }
+       #app textarea{
+        width: 100%;
+        border: 2px solid rgb(25, 25, 26);
+        border-radius :14px; 
+        outline: none;
+        min-height: 140px;
+       }
+       #app select{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 14px;
+
+       }
+    </style>
+    </head>
+    <body dir="rtl">
+
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">Reem - encode/decode</a>
+              <a class="navbar-brand" href="#">
+                <img src="imges/photo.webp" alt="" width="40" height="30" class="d-inline-block align-text-top">
+              </a>
+            </div>
+          </nav>
+
+        <main id="app">
+            <p>Text - النص</p>
+            <select id="select">
+                <option value="encode">تشفير النص </option>
+                <option value="decode">فك تشفير النص</option>
+            </select>
+
+            <textarea id="text"></textarea>
+                <p>Result - النتيجة</p>
+            <textarea id="result"></textarea>
+
+
+            <div class="card">
+                <div style="text-align:center;" class="card-header">
+                  عن الموقع
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p style="text-align:center;">موقع للتشفير أوفك التشفير بنظام 64 *ملاحظة:النص يجب ان يكون باللغة لانجليزية</p>
+                  </blockquote>
+                </div>
+              </div>
+
+        </main>
+
+
+
+
+<script src="cjs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
